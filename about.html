@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+        About user
+    </title>
+    <style>
+        body {
+            background-image: url('./image.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .boxed {
+            background-color: #fff;
+            width: 600px;
+            border: 2px solid rgb(212, 149, 212);
+            padding: 20px;
+            margin: 30px;
+            border-radius: 2px;
+            position: absolute;
+            left: 40%;
+            margin-left: -215px;
+        }
+
+        .boxed:hover {
+            color: crimson;
+        }
+
+        nav {
+            margin: 27px auto 0;
+
+            position: relative;
+            width: 230px;
+            height: 50px;
+            background-color: #34495e;
+            border-radius: 8px;
+            font-size: 0;
+        }
+
+        nav a {
+            line-height: 50px;
+            height: 100%;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav .animation {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            z-index: 0;
+            transition: all .5s ease 0s;
+            border-radius: 8px;
+        }
+
+        a:nth-child(1) {
+            width: 100px;
+        }
+
+        a:nth-child(2) {
+            width: 110px;
+        }
+
+        nav .start-home,
+        a:nth-child(1):hover~.animation {
+            width: 100px;
+            left: 0;
+            background-color: crimson;
+        }
+
+        nav .start-contact,
+        a:nth-child(2):hover~.animation {
+            width: 110px;
+            left: 100px;
+            background-color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0 40px;
+            text-align: center;
+            font-size: 40px;
+            color: #ffff;
+            font-family: 'Cherry Swash', cursive;
+        }
+    </style>
+
+    <link rel="stylesheet" href="About.html" />
+</head>
+
+<body>
+    <h1>About Me</h1>
+
+    <nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <div class="animation start-home"></div>
+        </nav>
+
+    </nav>
+    <section class="about" id="about">
+        <div class="max-width">
+
+
+
+            <div class="about-content">
+
+                <div class="column right">
+                    <div class="boxed">
+                        
+                        My Name is shivam dubey i am a pre final year B.tech Student.<br>
+                        I am a programmer ,Specialising in website and application Developement arena.<br>
+                        I have been developing Applications and websites since my college journey.<br>
+                        i solve problems in creative way.<br>
+                        skilled in problem solving,data structures and algorithm.<br> 
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
